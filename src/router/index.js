@@ -34,6 +34,11 @@ const routes = [
     name: 'DataBindingList2',
     component: () => import( /* webpackChunkName: "databindinglist2" */ '../views/DataBindingList2.vue')
   },
+  {
+    path: '/title',
+    name: 'title',
+    component: () => import( /* webpackChunkName: "databindinglist2" */ '../views/Title.vue')
+  },
 ]
 
 const router = new VueRouter({
