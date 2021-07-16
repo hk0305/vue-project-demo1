@@ -1,5 +1,4 @@
 import axios from 'axios';
-
 export default {
     mounted() {
         console.log('믹스인 mounted');
@@ -8,12 +7,12 @@ export default {
         console.log('믹스인 unmounted');
     },
     methods: {
-        async $api(url, method, data) {
-            return (await axios ({
+        async $callAPI(url, method, data) {
+            return (await axios({
                 method: method,
                 url,
                 data
-            }).catch(e=> {
+            }).catch(e => {
                 console.log(e);
             })).data;
         }
